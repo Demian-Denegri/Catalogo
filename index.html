@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denegri Web — Páginas web para tu negocio</title>
+  <meta name="description" content="Páginas web para locales y emprendimientos: pagás una vez por el desarrollo y un abono mensual por el mantenimiento. Mirá las plantillas disponibles." />
+  <meta name="theme-color" content="#0a0b11" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Catálogo de páginas web para tu negocio" />
+  <meta property="og:description" content="Plantillas listas para tu local. Desarrollo con pago único y mantenimiento mensual." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/catalog.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============================================================ HEADER -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Denegri Web — Inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M6.25 4h3.5a8 8 0 0 1 0 16H6.25zM9.25 7h0.5a5 5 0 0 1 0 10h-0.5z"/></svg>
+        </span>
+        <span class="brand__name"><span data-config="marca">Denegri Web</span><span class="brand__dot" aria-hidden="true">.</span></span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="site-nav" id="nav-principal" data-menu aria-label="Navegación principal">
+        <div class="site-nav__links">
+          <a href="#plantillas" data-nav-link>Plantillas</a>
+          <a href="#proceso" data-nav-link>Cómo funciona</a>
+          <a href="#precios" data-nav-link>Precios</a>
+          <a href="#faq" data-nav-link>Preguntas</a>
+          <a href="#contacto" data-nav-link>Contacto</a>
+        </div>
+        <a class="btn btn--primary" data-config-href="whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Hablemos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============================================================ HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <span class="eyebrow">Catálogo de páginas web</span>
+          <h1 data-config="heroTitulo">Páginas web que hacen que tu negocio se vea tan bien como es.</h1>
+          <p class="lead" data-config="heroSubtitulo">
+            Diseño y desarrollo sitios para locales y emprendimientos. Pagás una vez por el desarrollo
+            y un abono mensual por el mantenimiento: yo me encargo de que tu página esté siempre al día.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#plantillas">
+              Ver plantillas
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por una página web para mi negocio.">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+              Consultar por WhatsApp
+            </a>
+          </div>
+
+          <div class="hero__proof">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Precio fijo por el desarrollo
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Cambios incluidos todos los meses
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Sin conocimientos técnicos
+            </span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="2" aria-hidden="true">
+          <div class="browser">
+            <div class="browser__bar">
+              <span class="browser__dot"></span>
+              <span class="browser__dot"></span>
+              <span class="browser__dot"></span>
+              <span class="browser__url">tunegocio.com</span>
+            </div>
+            <div class="browser__body">
+              <div class="browser__hero"></div>
+              <div class="browser__row">
+                <div class="browser__cell"></div>
+                <div class="browser__cell"></div>
+                <div class="browser__cell"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== STATS STRIP -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="panel stats reveal">
+          <div class="stat"><strong>100%</strong><span>Adaptado a celulares</span></div>
+          <div class="stat"><strong>&lt; 2s</strong><span>Tiempo de carga</span></div>
+          <div class="stat"><strong>7 días</strong><span>Entrega promedio</span></div>
+          <div class="stat"><strong>1 a 1</strong><span>Atención personalizada</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= PLANTILLAS -->
+    <section class="section" id="plantillas">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Plantillas</span>
+          <h2>Elegí el estilo que mejor le queda a tu negocio</h2>
+          <p>Cada plantilla es una página completa y navegable. Entrá a la demo para verla funcionando de verdad.</p>
+        </div>
+
+        <div class="templates" style="margin-top: 3rem">
+
+          <!-- 1. Peluquería -->
+          <article class="template-card card reveal">
+            <div class="template-card__preview">
+              <div class="ph">
+                <div class="ph__label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg>
+                  Peluquería · Barbería
+                </div>
+              </div>
+              <span class="template-card__flag">Demo disponible</span>
+            </div>
+            <div class="template-card__body">
+              <h3>Estética, peluquería y barbería</h3>
+              <p>Mostrá tus servicios con precios, tu galería de trabajos y tomá turnos sin llamadas.</p>
+              <div class="template-card__tags">
+                <span class="chip">Turnos</span>
+                <span class="chip">Precios</span>
+                <span class="chip">Galería</span>
+              </div>
+              <a class="template-card__link" href="demos/peluqueria.html">
+                Ver demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Gimnasio -->
+          <article class="template-card card reveal" data-delay="1">
+            <div class="template-card__preview">
+              <div class="ph">
+                <div class="ph__label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M3 9v6M17.5 6.5v11M21 9v6M6.5 12h11"/></svg>
+                  Gimnasio · Fitness
+                </div>
+              </div>
+              <span class="template-card__flag">Demo disponible</span>
+            </div>
+            <div class="template-card__body">
+              <h3>Gimnasios y entrenamiento</h3>
+              <p>Planes y precios, grilla de clases, presentación de los profesores y consultas directas.</p>
+              <div class="template-card__tags">
+                <span class="chip">Planes</span>
+                <span class="chip">Clases</span>
+                <span class="chip">Equipo</span>
+              </div>
+              <a class="template-card__link" href="demos/gimnasio.html">
+                Ver demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Tienda -->
+          <article class="template-card card reveal" data-delay="2">
+            <div class="template-card__preview">
+              <div class="ph">
+                <div class="ph__label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>
+                  Comercio · Tienda
+                </div>
+              </div>
+              <span class="template-card__flag">Demo disponible</span>
+            </div>
+            <div class="template-card__body">
+              <h3>Comercios y tiendas</h3>
+              <p>Tu catálogo de productos ordenado por categorías y consulta inmediata por WhatsApp.</p>
+              <div class="template-card__tags">
+                <span class="chip">Catálogo</span>
+                <span class="chip">Categorías</span>
+                <span class="chip">WhatsApp</span>
+              </div>
+              <a class="template-card__link" href="demos/tienda.html">
+                Ver demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Servicios profesionales -->
+          <article class="template-card card reveal" data-delay="3">
+            <div class="template-card__preview">
+              <div class="ph">
+                <div class="ph__label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  Servicios profesionales
+                </div>
+              </div>
+              <span class="template-card__flag">Demo disponible</span>
+            </div>
+            <div class="template-card__body">
+              <h3>Servicios profesionales</h3>
+              <p>Presentá tu trabajo con portfolio y testimonios para generar confianza desde el primer clic.</p>
+              <div class="template-card__tags">
+                <span class="chip">Portfolio</span>
+                <span class="chip">Servicios</span>
+                <span class="chip">Contacto</span>
+              </div>
+              <a class="template-card__link" href="demos/servicios.html">
+                Ver demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Eventos -->
+          <article class="template-card card reveal" data-delay="4">
+            <div class="template-card__preview">
+              <div class="ph">
+                <div class="ph__label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8a3 3 0 1 0-3-3c0 3 3 3 3 3Zm0 0a3 3 0 1 1 3-3c0 3-3 3-3 3Z"/></svg>
+                  Eventos · Fiestas
+                </div>
+              </div>
+              <span class="template-card__flag">Demo disponible</span>
+            </div>
+            <div class="template-card__body">
+              <h3>Salones de eventos y fiestas</h3>
+              <p>Mostrá el salón, los paquetes disponibles y recibí pedidos de presupuesto online.</p>
+              <div class="template-card__tags">
+                <span class="chip">Salón</span>
+                <span class="chip">Paquetes</span>
+                <span class="chip">Presupuesto</span>
+              </div>
+              <a class="template-card__link" href="demos/eventos.html">
+                Ver demo
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== PROCESO -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>De la idea a tu página online en 4 pasos</h2>
+          <p>Un proceso simple y sin vueltas. Vos te ocupás de tu negocio, yo de la parte técnica.</p>
+        </div>
+
+        <div class="process" style="margin-top: 3rem">
+          <div class="step card reveal">
+            <span class="step__num">1</span>
+            <h3>Charlamos</h3>
+            <p>Me contás qué necesitás, para qué rubro es y qué te gustaría mostrar. Te asesoro sin compromiso.</p>
+          </div>
+          <div class="step card reveal" data-delay="1">
+            <span class="step__num">2</span>
+            <h3>Diseño</h3>
+            <p>Armo una propuesta visual con tu identidad y te la muestro para ajustar los detalles.</p>
+          </div>
+          <div class="step card reveal" data-delay="2">
+            <span class="step__num">3</span>
+            <h3>Desarrollo</h3>
+            <p>Programo la página, la optimizo y la pruebo en celular, tablet y computadora.</p>
+          </div>
+          <div class="step card reveal" data-delay="3">
+            <span class="step__num">4</span>
+            <h3>Entrega y mantenimiento</h3>
+            <p>Publicamos, te explico cómo usarla y me quedo a tu lado con el abono mensual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== PRECIOS -->
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Precios</span>
+          <h2>Claro desde el principio</h2>
+          <p>Un pago único por el desarrollo y un abono mensual por el mantenimiento. Sin sorpresas.</p>
+        </div>
+
+        <div class="pricing" style="margin-top: 3rem">
+
+          <!-- Pago único -->
+          <article class="price-card card price-card--featured reveal">
+            <span class="price-card__tag">Pago único</span>
+            <div class="price-card__head">
+              <h3>Desarrollo de tu página</h3>
+              <p>Se paga una sola vez al contratar. Tu página queda hecha a medida.</p>
+            </div>
+            <div class="price-card__amount">
+              <strong data-config="precios.desarrollo">$XX.XXX</strong>
+              <span>pago único</span>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Diseño personalizado según tu marca</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Adaptada a celular, tablet y computadora</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Todas las secciones que necesites</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> WhatsApp, formulario y Google Maps</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> SEO básico para aparecer en Google</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Publicación y puesta en marcha</li>
+            </ul>
+            <a class="btn btn--primary btn--block" data-config-href="whatsapp" data-wa="¡Hola! Quiero cotizar el desarrollo de mi página web.">Quiero mi página</a>
+          </article>
+
+          <!-- Mantenimiento -->
+          <article class="price-card card reveal" data-delay="1">
+            <div class="price-card__head">
+              <h3>Mantenimiento mensual</h3>
+              <p>Para que tu página esté siempre actualizada y funcionando bien.</p>
+            </div>
+            <div class="price-card__amount">
+              <strong data-config="precios.mantenimiento">$X.XXX</strong>
+              <span data-config="precios.mantenimientoPeriodo">por mes</span>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Cambios de textos, precios, fotos y horarios</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Ajustes de diseño menores</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Soporte por WhatsApp</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Revisión de que todo siga funcionando</li>
+              <li class="is-muted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> No incluye rediseñar la página por completo</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por el mantenimiento mensual de mi página.">Consultar mantenimiento</a>
+          </article>
+
+        </div>
+
+        <p class="price-note reveal" data-config="notaPie">
+          Los precios son de referencia y pueden variar según la cantidad de secciones y funcionalidades.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================== INCLUYE -->
+    <section class="section" id="incluye">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Qué incluye</span>
+          <h2>Todo lo que necesitás para empezar</h2>
+          <p>Cada página se entrega lista para usar, optimizada y pensada para que tus clientes confíen en vos.</p>
+        </div>
+
+        <div class="grid grid--4" style="margin-top: 3rem">
+          <div class="feature card reveal">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></svg></span>
+            <h3>Adaptada a todo</h3>
+            <p>Se ve perfecta en celular, tablet y computadora, sin perder nada por el camino.</p>
+          </div>
+          <div class="feature card reveal" data-delay="1">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span>
+            <h3>Carga rápida</h3>
+            <p>Optimizada para abrir al instante y no perder visitantes por la espera.</p>
+          </div>
+          <div class="feature card reveal" data-delay="2">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+            <h3>Visible en Google</h3>
+            <p>Títulos, descripciones y estructura pensados para que te encuentren.</p>
+          </div>
+          <div class="feature card reveal" data-delay="3">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <h3>Contacto directo</h3>
+            <p>Botón de WhatsApp y formulario para que te escriban en un toque.</p>
+          </div>
+          <div class="feature card reveal">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <h3>Ubicación y mapas</h3>
+            <p>Integración con Google Maps para que lleguen sin perderse.</p>
+          </div>
+          <div class="feature card reveal" data-delay="1">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></span>
+            <h3>Redes integradas</h3>
+            <p>Tus redes sociales conectadas para que sigan tu día a día.</p>
+          </div>
+          <div class="feature card reveal" data-delay="2">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+            <h3>Certificado de seguridad</h3>
+            <p>Sitio con HTTPS para que tus visitantes naveguen seguros.</p>
+          </div>
+          <div class="feature card reveal" data-delay="3">
+            <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></span>
+            <h3>Soporte cercano</h3>
+            <p>Me escribís y te respondo. Sin tickets ni intermediarios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Las dudas más comunes</h2>
+        </div>
+
+        <div class="faq" style="margin-top: 3rem">
+          <div class="faq-item reveal">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿Cuánto tarda mi página?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>En general entre 5 y 10 días, dependiendo de cuántas secciones tenga y de la rapidez con la que me pases los textos, fotos y tu logo.</p></div></div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="1">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿Qué pasa si después quiero cambiar algo?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>Se hace con el abono mensual de mantenimiento. Me escribís lo que querés modificar (precios, fotos, horarios, textos, promociones) y yo lo actualizo por vos.</p></div></div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="2">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿El mantenimiento incluye rediseñar la página?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>No. El abono cubre cambios, ajustes y mejoras sobre la página existente. Si querés reemplazarla por completo o cambiar gran parte del diseño, se cotiza aparte como un desarrollo nuevo.</p></div></div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="3">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿Qué necesito para arrancar?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>Idealmente tu logo, algunas fotos y los textos de tus servicios. Si no los tenés, no hay problema: te ayudo a armarlos durante el proceso.</p></div></div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="4">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿El dominio y el hosting están incluidos?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>Te dejo todo publicado y funcionando. El dominio y el hosting son servicios aparte (se pagan una vez al año) y te ayudo a elegir la opción más conveniente para tu caso.</p></div></div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="5">
+            <button class="faq-item__q" data-faq aria-expanded="false">
+              ¿Trabajás con negocios de otras ciudades?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-answer"><div><p>¡Sí! Todo el proceso se hace de forma remota, así que puedo trabajar con vos sin importar dónde estés.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="panel contact-grid" style="padding: clamp(1.6rem, 4vw, 3rem)">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Contacto</span>
+            <h2>¿Arrancamos con tu página?</h2>
+            <p class="lead">
+              Escribime y te cuento qué opción le queda mejor a tu negocio. Te respondo lo antes posible,
+              sin compromiso.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn--primary btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero empezar con mi página web.">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+                Escribir por WhatsApp
+              </a>
+              <a class="btn btn--ghost btn--lg" data-config-href="linkedin" data-config-if="linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3zM9 9h3.8v1.7h.06c.53-1 1.83-2.05 3.76-2.05C20.3 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z"/></svg>
+                Ver mi LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-list reveal" data-delay="1">
+            <a data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por una página web.">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg></span>
+              <span class="contact-list__text"><small>WhatsApp</small><strong data-config="telefono">+54 9 11 XXXX-XXXX</strong></span>
+            </a>
+
+            <a data-config-href="telefono">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+              <span class="contact-list__text"><small>Teléfono</small><strong data-config="telefono">+54 9 11 XXXX-XXXX</strong></span>
+            </a>
+
+            <a data-config-href="email">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+              <span class="contact-list__text"><small>Email</small><strong data-config="email">tu@email.com</strong></span>
+            </a>
+
+            <a data-config-href="linkedin" data-config-if="linkedin">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3zM9 9h3.8v1.7h.06c.53-1 1.83-2.05 3.76-2.05C20.3 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z"/></svg></span>
+              <span class="contact-list__text"><small>LinkedIn</small><strong data-config="profesional">[TU NOMBRE]</strong></span>
+            </a>
+
+            <a data-config-href="instagram" data-config-if="instagram">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
+              <span class="contact-list__text"><small>Instagram</small><strong>Ver perfil</strong></span>
+            </a>
+
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="contact-list__text"><small>Zona</small><strong data-config="ubicacion">[TU CIUDAD], Argentina</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================= FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M6.25 4h3.5a8 8 0 0 1 0 16H6.25zM9.25 7h0.5a5 5 0 0 1 0 10h-0.5z"/></svg>
+            </span>
+            <span class="brand__name"><span data-config="marca">Denegri Web</span><span class="brand__dot" aria-hidden="true">.</span></span>
+          </a>
+          <p>Páginas web para locales y emprendimientos. Desarrollo con pago único y mantenimiento mensual.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="#plantillas">Plantillas</a>
+          <a href="#proceso">Cómo funciona</a>
+          <a href="#precios">Precios</a>
+          <a href="#faq">Preguntas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> <span data-config="marca">[TU MARCA]</span>. Todos los derechos reservados.</span>
+        <span data-config="notaPie"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================= BOTÓN WHATSAPP -->
+  <a class="wa-float" data-config-href="whatsapp" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

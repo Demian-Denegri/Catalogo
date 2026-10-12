@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse Fitness — Gimnasio | Demo</title>
+  <meta name="description" content="Plantilla de demostración para gimnasios: planes, clases, equipo de profesores y consultas por WhatsApp." />
+  <meta name="theme-color" content="#0a0b11" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+</head>
+<body data-accent="gimnasio">
+
+  <div class="demo-bar">
+    <a class="demo-bar__back" href="../index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Volver al catálogo
+    </a>
+    <span class="demo-bar__tag"><span class="demo-bar__dot"></span><span>Plantilla de demostración · Gimnasio y Fitness</span></span>
+  </div>
+
+  <header class="demo-header" data-header>
+    <div class="container demo-header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M3 9v6M17.5 6.5v11M21 9v6M6.5 12h11"/></svg></span>
+        <span>Pulse Fitness</span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="demo-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="demo-nav" id="demo-nav" data-menu aria-label="Navegación principal">
+        <div class="demo-nav__links">
+          <a href="#planes">Planes</a>
+          <a href="#clases">Clases</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#horarios">Horarios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <a class="btn btn--primary" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Gimnasio y quiero una página así para mi negocio.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Pase de prueba
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="demo-hero" id="inicio">
+      <div class="container demo-hero__grid">
+        <div class="demo-hero__copy reveal">
+          <span class="eyebrow">Gimnasio &amp; Fitness</span>
+          <h1>Entrená con un plan que se adapta a vos.</h1>
+          <p class="lead">Musculación, clases grupales y entrenadores que te acompañan desde el primer día. Sin excusas, sin horarios imposibles.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="#planes">Ver planes</a>
+            <a class="btn btn--ghost btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero un pase de prueba en Pulse Fitness.">Pedir pase de prueba</a>
+          </div>
+          <div class="hero-tags">
+            <span class="chip chip--accent">Abierto de 7 a 23 h</span>
+            <span class="chip">Clases incluidas</span>
+            <span class="chip">Sin matrícula</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <div class="ph ph--4x3">
+            <div class="ph__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+              Foto del gimnasio
+              <small>Reemplazá por tu imagen</small>
+            </div>
+          </div>
+          <div class="hero-float">
+            <span>Alumnos activos</span>
+            <strong>+1.200</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="strip reveal">
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Equipamiento completo</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Más de 20 clases semanales</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Vestuarios con duchas</span>
+      </div>
+    </div>
+
+    <!-- Planes -->
+    <section class="section" id="planes">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Planes</span>
+          <h2>Elegí cómo querés entrenar</h2>
+          <p>Sin contratos largos. Podés cambiar de plan cuando quieras.</p>
+        </div>
+
+        <div class="grid grid--3" style="margin-top: 3rem">
+          <div class="card plan reveal">
+            <div class="plan__head"><h3>Pase libre</h3></div>
+            <p class="lead" style="font-size: 0.92rem">Para los que ya saben lo que hacen y quieren entrenar a su ritmo.</p>
+            <div class="plan__price"><strong>$25.000</strong><span>/ mes</span></div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Musculación libre</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Todos los horarios</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Vestuarios y duchas</li>
+              <li class="is-muted" style="color: var(--muted)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Clases grupales no incluidas</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" data-config-href="whatsapp" data-wa="¡Hola! Quiero info del plan Pase libre.">Consultar</a>
+          </div>
+
+          <div class="card plan plan--featured reveal" data-delay="1">
+            <span class="plan__badge">Más elegido</span>
+            <div class="plan__head"><h3>Full</h3></div>
+            <p class="lead" style="font-size: 0.92rem">Todo lo que necesitás para entrenar fuerte y con seguimiento.</p>
+            <div class="plan__price"><strong>$35.000</strong><span>/ mes</span></div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Todo lo del Pase libre</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Todas las clases grupales</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Evaluación física inicial</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Rutina personalizada</li>
+            </ul>
+            <a class="btn btn--primary btn--block" data-config-href="whatsapp" data-wa="¡Hola! Quiero info del plan Full.">Empezar ahora</a>
+          </div>
+
+          <div class="card plan reveal" data-delay="2">
+            <div class="plan__head"><h3>Dúo</h3></div>
+            <p class="lead" style="font-size: 0.92rem">Para entrenar acompañado y pagar menos. Ideal para parejas o amigos.</p>
+            <div class="plan__price"><strong>$55.000</strong><span>/ mes</span></div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 2 personas incluidas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Acceso completo para ambos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Clases grupales incluidas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Ahorrás $15.000 al mes</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" data-config-href="whatsapp" data-wa="¡Hola! Quiero info del plan Dúo.">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clases -->
+    <section class="section" id="clases">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Clases</span>
+          <h2>Más de 20 clases por semana</h2>
+        </div>
+        <div class="grid grid--3" style="margin-top: 2.5rem">
+          <div class="card feature-card reveal">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M3 9v6M17.5 6.5v11M21 9v6M6.5 12h11"/></svg></span>
+            <h3>Musculación</h3><p>Rutinas por objetivo con seguimiento de tu progreso.</p>
+          </div>
+          <div class="card feature-card reveal" data-delay="1">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span>
+            <h3>CrossFit</h3><p>Entrenamiento funcional de alta intensidad en grupo.</p>
+          </div>
+          <div class="card feature-card reveal" data-delay="2">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+            <h3>Funcional</h3><p>Fuerza, movilidad y resistencia con tu propio peso.</p>
+          </div>
+          <div class="card feature-card reveal">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3>Spinning</h3><p>Cardio sobre bicicleta fija con música y ritmo.</p>
+          </div>
+          <div class="card feature-card reveal" data-delay="1">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg></span>
+            <h3>Yoga</h3><p>Respiración, flexibilidad y equilibrio para bajar el estrés.</p>
+          </div>
+          <div class="card feature-card reveal" data-delay="2">
+            <span class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+            <h3>Zumba</h3><p>Baile y cardio para entrenar divirtiéndote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Equipo</span>
+          <h2>Profes que te acompañan</h2>
+        </div>
+        <div class="grid grid--3" style="margin-top: 2.5rem">
+          <div class="card team-card reveal">
+            <div class="ph ph--3x4 ph--soft"><div class="ph__label"><small>Foto del profe</small></div></div>
+            <div class="team-card__body"><strong>Lucas</strong><span>Entrenador de musculación</span></div>
+          </div>
+          <div class="card team-card reveal" data-delay="1">
+            <div class="ph ph--3x4 ph--soft"><div class="ph__label"><small>Foto de la profe</small></div></div>
+            <div class="team-card__body"><strong>Cami</strong><span>Profesora de Yoga y Funcional</span></div>
+          </div>
+          <div class="card team-card reveal" data-delay="2">
+            <div class="ph ph--3x4 ph--soft"><div class="ph__label"><small>Foto del profe</small></div></div>
+            <div class="team-card__body"><strong>Nico</strong><span>Coach de CrossFit</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios + Contacto -->
+    <section class="section" id="horarios">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">Horarios</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Nuestros horarios</h2>
+          <div class="hours">
+            <div class="hours__row"><span>Lunes a viernes</span><span>7:00 – 23:00</span></div>
+            <div class="hours__row"><span>Sábado</span><span>9:00 – 20:00</span></div>
+            <div class="hours__row"><span>Domingo y feriados</span><span>10:00 – 14:00</span></div>
+            <div class="hours__row"><span>Clases grupales</span><span>Consultar grilla</span></div>
+          </div>
+        </div>
+
+        <div id="contacto" class="reveal" data-delay="1">
+          <span class="eyebrow">Contacto</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Sumate hoy</h2>
+          <div class="contact-list">
+            <a data-config-href="whatsapp" data-wa="¡Hola! Quiero sumarme a Pulse Fitness.">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg></span>
+              <span class="contact-list__text"><small>WhatsApp</small><strong>Consultar planes</strong></span>
+            </a>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="contact-list__text"><small>Dirección</small><strong>Av. del Deporte 456</strong></span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+              <span class="contact-list__text"><small>Pase de prueba</small><strong>Sin cargo</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="panel cta-band reveal">
+          <h2>¿Querés una página así para tu gimnasio?</h2>
+          <p class="lead">Armo tus planes, tu grilla de clases y tu equipo en una web moderna y rápida.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero una página como la demo de Gimnasio.">Quiero esta plantilla</a>
+            <a class="btn btn--ghost btn--lg" href="../index.html">Ver otras plantillas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M3 9v6M17.5 6.5v11M21 9v6M6.5 12h11"/></svg></span>
+            <span>Pulse Fitness</span>
+          </a>
+          <p>Gimnasio y entrenamiento con planes flexibles y clases grupales.</p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="#planes">Planes</a>
+          <a href="#clases">Clases</a>
+          <a href="#equipo">Equipo</a>
+          <a href="../index.html">Catálogo de plantillas</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Pulse Fitness — Demo de <a href="../index.html" style="color: var(--accent); font-weight: 600">Denegri Web</a>.</span>
+        <span>¿Querés una así? <a data-config-href="whatsapp" data-wa="¡Hola! Vi la demo de Gimnasio." style="color: var(--accent); font-weight: 600">Escribime</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Gimnasio y quiero una página así." aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

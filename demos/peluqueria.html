@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Studio — Peluquería y Barbería | Demo</title>
+  <meta name="description" content="Plantilla de demostración para peluquerías y barberías: servicios con precios, galería y turnos por WhatsApp." />
+  <meta name="theme-color" content="#0a0b11" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+</head>
+<body data-accent="peluqueria">
+
+  <!-- Barra de demo -->
+  <div class="demo-bar">
+    <a class="demo-bar__back" href="../index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Volver al catálogo
+    </a>
+    <span class="demo-bar__tag"><span class="demo-bar__dot"></span><span>Plantilla de demostración · Peluquería y Barbería</span></span>
+  </div>
+
+  <!-- Header -->
+  <header class="demo-header" data-header>
+    <div class="container demo-header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></span>
+        <span>Nova Studio</span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="demo-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="demo-nav" id="demo-nav" data-menu aria-label="Navegación principal">
+        <div class="demo-nav__links">
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#opiniones">Opiniones</a>
+          <a href="#horarios">Horarios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <a class="btn btn--primary" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Peluquería y quiero una página así para mi negocio.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Reservar turno
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="demo-hero" id="inicio">
+      <div class="container demo-hero__grid">
+        <div class="demo-hero__copy reveal">
+          <span class="eyebrow">Peluquería &amp; Barbería</span>
+          <h1>Tu mejor versión empieza por un buen corte.</h1>
+          <p class="lead">Cortes, color, barba y tratamientos con atención personalizada. Reservá tu turno online y olvidate de esperar.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero reservar un turno en Nova Studio.">Reservar turno</a>
+            <a class="btn btn--ghost btn--lg" href="#servicios">Ver servicios</a>
+          </div>
+          <div class="hero-tags">
+            <span class="chip chip--accent">Turnos online</span>
+            <span class="chip">Atención personalizada</span>
+            <span class="chip">Sin esperas</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <div class="ph ph--4x3">
+            <div class="ph__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+              Foto del salón
+              <small>Reemplazá por tu imagen</small>
+            </div>
+          </div>
+          <div class="hero-float">
+            <span>Turnos esta semana</span>
+            <strong>+120</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strip -->
+    <div class="container">
+      <div class="strip reveal">
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> +10 años de experiencia</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Productos profesionales</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Efectivo, débito y transferencia</span>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Todo lo que hacemos, con precios claros</h2>
+          <p>Precios de referencia. Consultanos por combos y promociones vigentes.</p>
+        </div>
+
+        <div class="grid grid--2" style="margin-top: 2.5rem">
+          <div class="card reveal" style="padding: 1.6rem">
+            <div class="service-list">
+              <div class="service-row">
+                <div class="service-row__info"><strong>Corte de cabello</strong><span>Corte a tijera o máquina + lavado</span></div>
+                <span class="service-row__price">$9.500</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Barba y perfilado</strong><span>Navaja, toalla caliente y acabado</span></div>
+                <span class="service-row__price">$6.000</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Corte + barba</strong><span>El combo más pedido</span></div>
+                <span class="service-row__price">$14.000</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Brushing y peinado</strong><span>Para eventos y ocasiones especiales</span></div>
+                <span class="service-row__price">$7.500</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal" data-delay="1" style="padding: 1.6rem">
+            <div class="service-list">
+              <div class="service-row">
+                <div class="service-row__info"><strong>Color completo</strong><span>Tinte, baño de color y tratamiento</span></div>
+                <span class="service-row__price">$28.000</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Reflejos / Balayage</strong><span>Diseño de color personalizado</span></div>
+                <span class="service-row__price">$35.000</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Tratamiento capilar</strong><span>Nutrición profunda e hidratación</span></div>
+                <span class="service-row__price">$12.000</span>
+              </div>
+              <div class="service-row">
+                <div class="service-row__info"><strong>Peinado de fiesta</strong><span>Recogidos y ondas</span></div>
+                <span class="service-row__price">$15.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Galería</span>
+          <h2>Algunos de nuestros trabajos</h2>
+        </div>
+        <div class="gallery reveal" style="margin-top: 2.5rem">
+          <div class="ph"><div class="ph__label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>Color</div></div>
+          <div class="ph ph--soft"><div class="ph__label"><small>Foto 2</small></div></div>
+          <div class="ph ph--soft"><div class="ph__label"><small>Foto 3</small></div></div>
+          <div class="ph ph--soft"><div class="ph__label"><small>Foto 4</small></div></div>
+          <div class="ph ph--soft"><div class="ph__label"><small>Foto 5</small></div></div>
+          <div class="ph ph--soft"><div class="ph__label"><small>Foto 6</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="section" id="opiniones">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Opiniones</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="grid grid--3" style="margin-top: 2.5rem">
+          <div class="card quote-card reveal">
+            <div class="quote-card__stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>“Reservo desde el celular y entro directo. El color me quedó increíble.”</blockquote>
+            <div class="quote-card__author"><span class="quote-card__avatar">M</span><div><strong>Mariana</strong><br /><span>Cliente hace 3 años</span></div></div>
+          </div>
+          <div class="card quote-card reveal" data-delay="1">
+            <div class="quote-card__stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>“Mejor barbería de la zona. El combo corte y barba siempre impecable.”</blockquote>
+            <div class="quote-card__author"><span class="quote-card__avatar">J</span><div><strong>Julián</strong><br /><span>Cliente hace 2 años</span></div></div>
+          </div>
+          <div class="card quote-card reveal" data-delay="2">
+            <div class="quote-card__stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>“Pedí turno un domingo por la noche y me confirmaron al toque.”</blockquote>
+            <div class="quote-card__author"><span class="quote-card__avatar">S</span><div><strong>Sofía</strong><br /><span>Clienta nueva</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios + Contacto -->
+    <section class="section" id="horarios">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">Horarios</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Cuándo estamos abiertos</h2>
+          <div class="hours">
+            <div class="hours__row"><span>Lunes</span><span>Cerrado</span></div>
+            <div class="hours__row"><span>Martes a viernes</span><span>9:00 – 20:00</span></div>
+            <div class="hours__row"><span>Sábado</span><span>9:00 – 18:00</span></div>
+            <div class="hours__row"><span>Domingo</span><span>Cerrado</span></div>
+          </div>
+        </div>
+
+        <div id="contacto" class="reveal" data-delay="1">
+          <span class="eyebrow">Contacto</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Reservá tu turno</h2>
+          <div class="contact-list">
+            <a data-config-href="whatsapp" data-wa="¡Hola! Quiero reservar un turno en Nova Studio.">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg></span>
+              <span class="contact-list__text"><small>WhatsApp</small><strong>Reservar por mensaje</strong></span>
+            </a>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="contact-list__text"><small>Dirección</small><strong>Av. Siempre Viva 123, Centro</strong></span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <span class="contact-list__text"><small>Duración promedio</small><strong>45 minutos</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="panel cta-band reveal">
+          <h2>¿Querés una página así para tu peluquería?</h2>
+          <p class="lead">La adapto con tus colores, tus servicios y tus fotos. Lista en pocos días.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero una página como la demo de Peluquería para mi negocio.">Quiero esta plantilla</a>
+            <a class="btn btn--ghost btn--lg" href="../index.html">Ver otras plantillas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></span>
+            <span>Nova Studio</span>
+          </a>
+          <p>Peluquería y barbería. Cortes, color y barba con atención personalizada.</p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#horarios">Horarios</a>
+          <a href="../index.html">Catálogo de plantillas</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nova Studio — Demo de <a href="../index.html" style="color: var(--accent); font-weight: 600">Denegri Web</a>.</span>
+        <span>¿Querés una así? <a data-config-href="whatsapp" data-wa="¡Hola! Vi la demo de Peluquería." style="color: var(--accent); font-weight: 600">Escribime</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Peluquería y quiero una página así." aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

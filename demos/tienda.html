@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercado Norte — Comercio y Tienda | Demo</title>
+  <meta name="description" content="Plantilla de demostración para comercios: catálogo de productos por categorías y consultas por WhatsApp." />
+  <meta name="theme-color" content="#0a0b11" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+</head>
+<body data-accent="tienda">
+
+  <div class="demo-bar">
+    <a class="demo-bar__back" href="../index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Volver al catálogo
+    </a>
+    <span class="demo-bar__tag"><span class="demo-bar__dot"></span><span>Plantilla de demostración · Comercio y Tienda</span></span>
+  </div>
+
+  <header class="demo-header" data-header>
+    <div class="container demo-header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></span>
+        <span>Mercado Norte</span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="demo-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="demo-nav" id="demo-nav" data-menu aria-label="Navegación principal">
+        <div class="demo-nav__links">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#envios">Envíos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <a class="btn btn--primary" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Tienda y quiero una página así para mi negocio.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Hacer un pedido
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="demo-hero" id="inicio">
+      <div class="container demo-hero__grid">
+        <div class="demo-hero__copy reveal">
+          <span class="eyebrow">Comercio &amp; Tienda</span>
+          <h1>Productos de siempre, a un mensaje de distancia.</h1>
+          <p class="lead">Almacén natural, bebidas artesanales y regalos. Mirá el catálogo y hacemos tu pedido por WhatsApp en minutos.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn--ghost btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero hacer un pedido en Mercado Norte.">Hacer un pedido</a>
+          </div>
+          <div class="hero-tags">
+            <span class="chip chip--accent">Envío sin cargo</span>
+            <span class="chip">Pedidos por WhatsApp</span>
+            <span class="chip">Retiro en el local</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <div class="ph ph--4x3">
+            <div class="ph__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>
+              Foto del local
+              <small>Reemplazá por tu imagen</small>
+            </div>
+          </div>
+          <div class="hero-float">
+            <span>Productos disponibles</span>
+            <strong>+300</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="strip reveal">
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Envío sin cargo desde $20.000</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Efectivo, débito y transferencia</span>
+        <span class="strip__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Productos de productores locales</span>
+      </div>
+    </div>
+
+    <!-- Catálogo -->
+    <section class="section" id="catalogo">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Mirá todo lo que tenemos</h2>
+          <p>Filtrá por categoría y consultá por cualquier producto sin dar vueltas.</p>
+        </div>
+
+        <div class="cat-tabs reveal" style="justify-content: center; margin-top: 2.5rem" role="tablist" aria-label="Categorías">
+          <button class="is-active" data-filter="all" type="button">Todos</button>
+          <button data-filter="almacen" type="button">Almacén</button>
+          <button data-filter="bebidas" type="button">Bebidas</button>
+          <button data-filter="frescos" type="button">Frescos</button>
+          <button data-filter="regalos" type="button">Regalos</button>
+        </div>
+
+        <div class="grid grid--4" id="productos">
+          <article class="card product-card reveal" data-cat="almacen">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Yerba mate seleccionada</h3>
+              <p>Hoja despalada, paquete de 1 kg.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$8.500</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por la yerba mate seleccionada." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="almacen">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Café de especialidad</h3>
+              <p>Grano tostado artesanal, 500 g.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$12.000</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por el café de especialidad." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="almacen">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Miel pura de campo</h3>
+              <p>Frasco de 500 g, sin agregados.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$6.500</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por la miel pura de campo." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="bebidas">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Jugo natural exprimido</h3>
+              <p>Naranja, pomelo o mixto. 1 L.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$3.200</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por el jugo natural exprimido." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="bebidas">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Kombucha artesanal</h3>
+              <p>Sabores varios, botella de 500 ml.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$4.800</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por la kombucha artesanal." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="frescos">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Pan de masa madre</h3>
+              <p>Horno propio, todos los días.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$5.000</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por el pan de masa madre." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="frescos">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Queso artesanal</h3>
+              <p>De campo, horma de 500 g.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$9.800</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por el queso artesanal." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product-card reveal" data-cat="regalos">
+            <div class="ph ph--4x3"><div class="ph__label"><small>Foto del producto</small></div></div>
+            <div class="product-card__body">
+              <h3>Caja de regalo gourmet</h3>
+              <p>Selección de productos para sorprender.</p>
+              <div class="product-card__foot">
+                <span class="product-card__price">$18.000</span>
+                <a class="btn btn--ghost" data-config-href="whatsapp" data-wa="¡Hola! Quiero consultar por la caja de regalo gourmet." style="padding: 0.5rem 0.9rem; font-size: 0.82rem">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="section" id="nosotros">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">Nosotros</span>
+          <h2 style="margin: 0.6rem 0 1.2rem">Un almacén de barrio, con productos elegidos uno por uno</h2>
+          <p>Trabajamos con productores locales y elegimos cada producto pensando en la calidad. Si algo no nos gusta, no lo vendemos.</p>
+          <div class="grid grid--2" style="margin-top: 1.8rem">
+            <div class="feature-card card" style="padding: 1.2rem">
+              <h3 style="font-size: 1rem">Productores locales</h3>
+              <p style="font-size: 0.88rem">Apoyamos a emprendedores de la zona.</p>
+            </div>
+            <div class="feature-card card" style="padding: 1.2rem">
+              <h3 style="font-size: 1rem">Atención personalizada</h3>
+              <p style="font-size: 0.88rem">Te asesoramos según lo que buscás.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid--2 reveal" data-delay="1">
+          <div class="ph ph--1x1"><div class="ph__label"><small>Foto 1</small></div></div>
+          <div class="ph ph--1x1 ph--soft"><div class="ph__label"><small>Foto 2</small></div></div>
+          <div class="ph ph--1x1 ph--soft"><div class="ph__label"><small>Foto 3</small></div></div>
+          <div class="ph ph--1x1"><div class="ph__label"><small>Foto 4</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Envíos + Contacto -->
+    <section class="section" id="envios">
+      <div class="container grid grid--2">
+        <div class="reveal">
+          <span class="eyebrow">Envíos</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Cómo hacemos las entregas</h2>
+          <div class="hours">
+            <div class="hours__row"><span>Envío sin cargo</span><span>Desde $20.000</span></div>
+            <div class="hours__row"><span>Zona de reparto</span><span>Radio de 10 km</span></div>
+            <div class="hours__row"><span>Tiempo de entrega</span><span>24 a 48 h</span></div>
+            <div class="hours__row"><span>Retiro en el local</span><span>Sin cargo</span></div>
+          </div>
+        </div>
+
+        <div id="contacto" class="reveal" data-delay="1">
+          <span class="eyebrow">Contacto</span>
+          <h2 style="margin: 0.6rem 0 1.5rem">Hacé tu pedido</h2>
+          <div class="contact-list">
+            <a data-config-href="whatsapp" data-wa="¡Hola! Quiero hacer un pedido en Mercado Norte.">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg></span>
+              <span class="contact-list__text"><small>WhatsApp</small><strong>Hacer un pedido</strong></span>
+            </a>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="contact-list__text"><small>Dirección</small><strong>Calle del Mercado 78, Barrio Norte</strong></span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <span class="contact-list__text"><small>Horario</small><strong>Lun a Sáb, 8:00 – 21:00</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight">
+      <div class="container">
+        <div class="panel cta-band reveal">
+          <h2>¿Querés una página así para tu negocio?</h2>
+          <p class="lead">Subo tu catálogo completo con fotos, precios y categorías. Tus clientes te consultan por WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" data-config-href="whatsapp" data-wa="¡Hola! Quiero una página como la demo de Tienda.">Quiero esta plantilla</a>
+            <a class="btn btn--ghost btn--lg" href="../index.html">Ver otras plantillas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4.5 4h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></span>
+            <span>Mercado Norte</span>
+          </a>
+          <p>Almacén natural, bebidas artesanales y regalos. Pedidos por WhatsApp.</p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#envios">Envíos</a>
+          <a href="../index.html">Catálogo de plantillas</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Mercado Norte — Demo de <a href="../index.html" style="color: var(--accent); font-weight: 600">Denegri Web</a>.</span>
+        <span>¿Querés una así? <a data-config-href="whatsapp" data-wa="¡Hola! Vi la demo de Tienda." style="color: var(--accent); font-weight: 600">Escribime</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-config-href="whatsapp" data-wa="¡Hola! Me gustó la demo de Tienda y quiero una página así." aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    /* Filtro simple por categorías del catálogo */
+    (function () {
+      var tabs = document.querySelectorAll(".cat-tabs button");
+      var cards = document.querySelectorAll("#productos [data-cat]");
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var cat = tab.getAttribute("data-filter");
+          tabs.forEach(function (t) { t.classList.remove("is-active"); });
+          tab.classList.add("is-active");
+          cards.forEach(function (card) {
+            var mostrar = cat === "all" || card.getAttribute("data-cat") === cat;
+            card.style.display = mostrar ? "" : "none";
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
