@@ -36,8 +36,8 @@ Ahí podés completar:
 | `heroTitulo` / `heroSubtitulo` | Los textos grandes de la portada |
 | `notaPie` | Aclaración sobre los precios |
 
-> Los valores actuales son **placeholders** (`[TU MARCA]`, `+54 9 11 XXXX-XXXX`, `$XX.XXX`).
-> Reemplazalos antes de publicar.
+> La marca, el teléfono, el WhatsApp y el LinkedIn ya están cargados. Quedan pendientes el
+> **email** (`tu@email.com`) y los **precios** (`$XX.XXX`).
 
 ---
 
