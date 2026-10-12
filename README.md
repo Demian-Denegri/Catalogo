@@ -36,8 +36,8 @@ Ahí podés completar:
 | `heroTitulo` / `heroSubtitulo` | Los textos grandes de la portada |
 | `notaPie` | Aclaración sobre los precios |
 
-> La marca, el teléfono, el WhatsApp y el LinkedIn ya están cargados. Quedan pendientes el
-> **email** (`tu@email.com`) y los **precios** (`$XX.XXX`).
+> La marca, el teléfono, el WhatsApp, el email y el LinkedIn ya están cargados.
+> Queda pendiente definir los **precios** (`$XX.XXX`).
 
 ---
 
@@ -129,9 +129,8 @@ Las clases `ph--16x9`, `ph--4x3`, `ph--1x1` y `ph--3x4` definen la proporción.
 
 ## ✅ Antes de publicar — checklist
 
-- [x] Marca, teléfono, WhatsApp y LinkedIn cargados en `assets/js/config.js`.
+- [x] Marca, teléfono, WhatsApp, email y LinkedIn cargados en `assets/js/config.js`.
 - [ ] Definir los precios (`precios.desarrollo` y `precios.mantenimiento`) y revisar los de las demos.
-- [ ] Completar el email.
 - [ ] Reemplazar los placeholders de imágenes por fotos reales.
 - [ ] Probar los botones de WhatsApp en celular (confirmar que el número tenga WhatsApp).
 - [ ] Actualizar la fecha del pie si hace falta (se pone sola con el año actual).

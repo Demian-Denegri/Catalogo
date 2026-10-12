@@ -23,7 +23,7 @@ window.CATALOGO_CONFIG = {
   telefonoLink: "+541168220298", // mismo número, apto para "llamar"
   whatsapp: "5491168220298", // solo dígitos, sin "+" ni espacios
   whatsappMensaje: "¡Hola! Vi tu catálogo de páginas web y quiero hacerte una consulta.",
-  email: "tu@email.com",
+  email: "demiandenegri@gmail.com",
   linkedin: "https://www.linkedin.com/in/demiandenegri",
   instagram: "", // opcional. Si lo dejás vacío, se oculta.
 
