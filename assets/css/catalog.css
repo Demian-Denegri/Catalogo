@@ -154,6 +154,7 @@
   overflow: hidden;
   display: grid;
   align-content: start;
+  position: relative;
   transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
 .template-card:hover {
@@ -178,6 +179,13 @@
 }
 .template-card__link svg { width: 17px; height: 17px; transition: transform 0.25s var(--ease); }
 .template-card:hover .template-card__link svg { transform: translateX(4px); }
+/* toda la tarjeta es clickeable y lleva a la demo de la plantilla */
+.template-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 .template-card__flag {
   position: absolute;
   top: 0.8rem; right: 0.8rem;

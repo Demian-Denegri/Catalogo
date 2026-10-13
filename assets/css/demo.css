@@ -1,5 +1,5 @@
 /* ============================================================================
-   DEMO — estilos compartidos por las 5 páginas de ejemplo
+   DEMO — estilos compartidos por las 6 páginas de ejemplo
    ============================================================================ */
 
 /* --------------------------------------------------- header de la demo --- */
@@ -263,4 +263,267 @@
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .gallery .ph:nth-child(1) { grid-column: span 2; grid-row: span 1; }
   .hero-float { position: static; margin-top: 1rem; }
+}
+
+/* ============================================================================
+   RESTAURANTE — identidad visual tomada del Instagram de Amida
+   (fondo negro puro, tipografía display en mayúsculas, historias destacadas)
+   ============================================================================ */
+
+body[data-accent="restaurante"] {
+  background:
+    radial-gradient(1100px 640px at 84% -16%, rgba(255, 45, 63, 0.16), transparent 62%),
+    radial-gradient(900px 520px at -8% 4%, rgba(255, 157, 46, 0.09), transparent 58%),
+    #070707;
+}
+body[data-accent="restaurante"] .demo-bar { background: rgba(7, 7, 7, 0.88); }
+body[data-accent="restaurante"] .demo-header { background: rgba(7, 7, 7, 0.7); }
+body[data-accent="restaurante"] .demo-header.is-scrolled { background: rgba(7, 7, 7, 0.95); }
+
+/* --- tipografía display (estilo "meme" de sus publicaciones) --------------- */
+body[data-accent="restaurante"] h1,
+body[data-accent="restaurante"] h2,
+body[data-accent="restaurante"] .rest-display {
+  font-family: "Anton", var(--font-head);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.004em;
+  line-height: 1.02;
+}
+body[data-accent="restaurante"] .demo-hero__copy h1 {
+  font-size: clamp(2.5rem, 7.6vw, 5rem);
+  line-height: 0.94;
+}
+body[data-accent="restaurante"] h2 { line-height: 1.04; }
+body[data-accent="restaurante"] .demo-nav__links a,
+body[data-accent="restaurante"] .cat-tabs button,
+body[data-accent="restaurante"] .rest-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+body[data-accent="restaurante"] .demo-nav__links a { font-size: 0.8rem; }
+body[data-accent="restaurante"] .cat-tabs button { font-size: 0.76rem; }
+body[data-accent="restaurante"] .brand {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1.05rem;
+}
+
+.rest-kicker {
+  display: inline-block;
+  font-size: 0.74rem;
+  color: var(--accent);
+}
+.rest-kicker--muted { color: var(--muted); }
+.rest-display--xl { font-size: clamp(2.4rem, 9vw, 5.6rem); }
+
+/* --- historias destacadas (como las del perfil) ---------------------------- */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem 1rem;
+  justify-content: center;
+}
+.highlight {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  width: 108px;
+  text-align: center;
+  cursor: pointer;
+}
+.highlight__ring {
+  display: grid;
+  place-items: center;
+  padding: 3px;
+  border-radius: 50%;
+  background: conic-gradient(from 210deg, var(--accent), var(--accent-2), var(--accent));
+  transition: transform 0.35s var(--ease);
+}
+.highlight:hover .highlight__ring { transform: scale(1.06) rotate(-3deg); }
+.highlight__cover {
+  position: relative;
+  width: 94px; height: 94px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: #0b0b0b;
+  border: 3px solid #070707;
+}
+.highlight__cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.34;
+  filter: grayscale(40%);
+}
+.highlight__cover span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.85);
+  padding-inline: 0.35rem;
+}
+.highlight__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* --- ticker (banda en movimiento) ------------------------------------------ */
+.ticker {
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background: #0a0a0a;
+}
+.ticker__track {
+  display: flex;
+  width: max-content;
+  animation: restTicker 30s linear infinite;
+}
+.ticker__group {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0.9rem 1.2rem;
+}
+.ticker__group span {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.4rem;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+.ticker__group span::after { content: "✦"; color: var(--accent); }
+@keyframes restTicker { to { transform: translateX(-50%); } }
+
+/* --- banda "shout" --------------------------------------------------------- */
+.shout {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background:
+    radial-gradient(720px 320px at 12% 50%, rgba(255, 45, 63, 0.22), transparent 70%),
+    radial-gradient(720px 320px at 88% 50%, rgba(255, 157, 46, 0.17), transparent 70%),
+    #0a0a0a;
+}
+.shout__inner {
+  padding-block: clamp(2.6rem, 7vw, 5rem);
+  display: grid;
+  gap: 1.4rem;
+  justify-items: center;
+  text-align: center;
+}
+.shout__text {
+  font-family: "Anton", var(--font-head);
+  font-size: clamp(1.9rem, 6.6vw, 4.4rem);
+  line-height: 0.98;
+  text-transform: uppercase;
+  max-width: 18ch;
+  margin: 0;
+  color: var(--text);
+}
+.shout__text em { font-style: normal; color: var(--accent); }
+
+/* --- píldoras de días / etiquetas ------------------------------------------ */
+.pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.pill-row--start { justify-content: flex-start; }
+.day-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 1rem;
+  border-radius: var(--pill);
+  border: 1px solid var(--border-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+.day-pill.is-on {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* --- locales --------------------------------------------------------------- */
+.local-card { display: grid; gap: 1rem; padding: 1.6rem; }
+.local-card h3 { font-size: 1.35rem; }
+.local-card__meta {
+  display: grid;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+.local-card__meta span { display: flex; align-items: center; gap: 0.5rem; }
+.local-card__meta svg { width: 17px; height: 17px; color: var(--accent); flex: none; }
+
+/* --- feed de Instagram ----------------------------------------------------- */
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+}
+.feed-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.feed-tile img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s var(--ease), filter 0.55s var(--ease);
+}
+.feed-tile:hover img { transform: scale(1.07); }
+.feed-tile__play {
+  position: absolute;
+  top: 0.55rem; right: 0.55rem;
+  display: grid;
+  place-items: center;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+.feed-tile__play svg { width: 12px; height: 12px; }
+.ig-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* --- ajustes de componentes dentro del tema ------------------------------- */
+body[data-accent="restaurante"] .card {
+  background: #111;
+  border-color: var(--border);
+}
+body[data-accent="restaurante"] .panel { background: rgba(17, 17, 17, 0.78); }
+body[data-accent="restaurante"] .hours__row:nth-child(odd) { background: rgba(255, 255, 255, 0.04); }
+body[data-accent="restaurante"] .product-card__price,
+body[data-accent="restaurante"] .service-row__price { color: var(--accent); }
+
+@media (max-width: 700px) {
+  .feed-grid { grid-template-columns: repeat(2, 1fr); }
+  .highlight { width: 92px; }
+  .highlight__cover { width: 78px; height: 78px; }
+  .highlight__cover span { font-size: 0.6rem; }
 }

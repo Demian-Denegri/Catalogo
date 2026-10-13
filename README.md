@@ -2,7 +2,7 @@
 
 Sitio estático que funciona como **catálogo de plantillas** para ofrecer a locales y
 emprendimientos. Incluye una página principal (propuesta, plantillas, precios, preguntas
-frecuentes y contacto) y **5 demos navegables** de cada tipo de negocio.
+frecuentes y contacto) y **6 demos navegables** de cada tipo de negocio.
 
 Modelo de negocio que comunica la web: **pago único por el desarrollo + abono mensual
 por el mantenimiento**.
@@ -16,6 +16,10 @@ Todo lo que cambia seguido está en **un solo archivo**:
 ```
 assets/js/config.js
 ```
+
+> Para el **catálogo** (`index.html`). Las **plantillas** (`demos/`) son autocontenidas:
+> si entregás una por separado, sus datos (WhatsApp, mensajes, año) se editan en el
+> `js/main.js` de esa carpeta.
 
 Ahí podés completar:
 
@@ -46,20 +50,49 @@ Ahí podés completar:
 ```
 Catalogo/
 ├── index.html               ← Página principal (catálogo)
-├── assets/
+├── assets/                  ← Assets compartidos del catálogo (index)
+│   ├── css/
+│   │   ├── base.css         ← Variables y estilos base
+│   │   ├── demo.css         ← Estilos de las demos
+│   │   ├── catalog.css      ← Estilos exclusivos del catálogo
+│   │   └── restaurante.css  ← Hoja original de la demo de restaurante
 │   ├── img/
 │   │   ├── logo.svg         ← Logo completo (marca + nombre)
-│   │   └── favicon.svg      ← Ícono del sitio
+│   │   ├── favicon.svg      ← Ícono del sitio
+│   │   └── amida/           ← Fotos originales de Amida Sushi (respaldo; la plantilla usa su copia propia)
 │   └── js/
-│       ├── config.js        ← ⭐ Datos editables
-│       └── main.js          ← Menú, animaciones, FAQ, inyección de datos
-└── demos/
-    ├── peluqueria.html      ← Estética / Peluquería / Barbería
-    ├── gimnasio.html        ← Gimnasio / Fitness
-    ├── tienda.html          ← Comercio / Tienda (con filtro por categorías)
-    ├── servicios.html       ← Servicios profesionales
-    └── eventos.html         ← Salones de eventos / fiestas
+│       ├── config.js        ← ⭐ Datos editables (catálogo)
+│       └── main.js          ← Comportamiento compartido (catálogo y demos)
+└── demos/                   ← 🔒 Plantillas 100% autocontenidas
+    ├── peluqueria/          ← Estética / Peluquería / Barbería
+    ├── gimnasio/            ← Gimnasio / Fitness
+    ├── tienda/              ← Comercio / Tienda (con filtro por categorías)
+    ├── servicios/           ← Servicios profesionales
+    ├── eventos/             ← Salones de eventos / fiestas
+    └── restaurante/         ← Restaurante / Sushi (personalizada para Amida Sushi)
 ```
+
+### Plantillas autocontenidas
+
+Cada carpeta de `demos/` es una **plantilla completa e independiente**: se puede copiar,
+entregar o publicar por separado, sin depender del catálogo ni de `assets/`.
+
+```
+demos/restaurante/
+├── index.html              ← La plantilla en sí
+└── assets/                 ← Assets propios de la plantilla
+    ├── css/main.css        ← Estilos propios de la plantilla
+    ├── js/main.js          ← Lógica propia (datos del dueño + comportamientos)
+    └── img/                ← Imágenes propias (fotos del negocio, favicon, etc.)
+```
+
+Cada plantilla tiene su **propia** carpeta `assets/` (`css/`, `js/`, `img/`), con la misma
+organización que el catálogo, pero totalmente independiente de él.
+
+- El único enlace hacia afuera es la barra de demo **"Volver al catálogo"** (`../../index.html`),
+  que se puede quitar al entregar la plantilla (o quedar para mostrar el catálogo completo).
+- Los botones de venta **"Quiero esta plantilla"** apuntan al WhatsApp del dueño del catálogo,
+  que ahora está configurado dentro de cada `assets/js/main.js`.
 
 ### Colores
 Los colores base están en las variables de `assets/css/base.css` (`:root`).
@@ -69,7 +102,11 @@ Cada demo cambia su color de acento con el atributo `data-accent` en el `<body>`
 <body data-accent="gimnasio">
 ```
 
-Valores disponibles: `peluqueria`, `gimnasio`, `tienda`, `servicios`, `eventos`.
+Valores disponibles: `peluqueria`, `gimnasio`, `tienda`, `servicios`, `eventos`, `restaurante`.
+
+> La demo **`demos/restaurante/`** no usa `base.css` ni `demo.css`: tiene su propia hoja
+> `assets/css/main.css` con una estética oscura y premium (negro carbón, dorado cálido y
+> tipografías Montserrat + Poppins).
 
 ---
 
@@ -108,6 +145,17 @@ y reemplazalos por:
 ```
 
 Las clases `ph--16x9`, `ph--4x3`, `ph--1x1` y `ph--3x4` definen la proporción.
+
+> La demo **`demos/restaurante/`** ya viene con **fotos profesionales** de archivo (WebP) en
+> `assets/img/amida/` —incluye el feed con publicaciones reales de Instagram en `ig-1.jpg`…
+> `ig-8.jpg`— y con **opiniones reales** de Google. Su diseño es una **estética oscura y
+> premium** hecha a medida (no usa el CSS del catálogo): fondo carbón `#0B0D0D`, superficie
+> `#191A18`, dorado cálido `#B98A52` (uso medido), vino `#8C3B2E` opcional, tipografías
+> **Montserrat** (títulos e interfaz) y **Poppins** (texto). Los estilos están en
+> `assets/css/main.css`.
+> Las fotos son **de archivo (stock de Pexels)**, no del local real; para una publicación
+> definitiva conviene reemplazarlas por fotos originales de Amida Sushi y confirmar que tenés
+> permiso para usarlas. El detalle de las fuentes está en `demos/restaurante/assets/img/CREDITOS.md`.
 
 ---
 

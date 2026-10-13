@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amida Sushi — Sushi y cocina japonesa en San Justo y Villa Luro</title>
+  <meta name="description" content="Sushi y cocina japonesa elaborados al momento en San Justo y Villa Luro. Sushi libre martes, jueves y domingos, carta con fotos, reservas y pedidos por WhatsApp." />
+  <meta name="theme-color" content="#0B0D0D" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+  <!-- Metadatos sociales -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="Amida Sushi" />
+  <meta property="og:title" content="Amida Sushi — Sushi y cocina japonesa" />
+  <meta property="og:description" content="Sushi libre martes, jueves y domingos. Carta con fotos, dos locales en zona oeste y delivery. Reservá por WhatsApp." />
+  <meta property="og:image" content="assets/img/amida/hero.webp" />
+  <meta property="og:locale" content="es_AR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Amida Sushi",
+    "servesCuisine": ["Japonesa", "Sushi"],
+    "priceRange": "$$",
+    "paymentAccepted": "Efectivo, Tarjeta",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Pres. Dr. Arturo U. Illia 2290",
+      "addressLocality": "San Justo",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "telephone": "+54 11 3290-2409",
+    "openingHours": ["Mo-Th 18:00-23:30", "Fr-Su 18:00-00:00"],
+    "hasMenu": "#menu",
+    "sameAs": ["https://www.instagram.com/amida_sushi"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Barra de demo -->
+  <div class="r-bar">
+    <a class="r-bar__back" href="../../index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      Volver al catálogo
+    </a>
+    <span class="r-bar__tag"><span class="r-bar__dot"></span><span>Plantilla de demostración · Restaurante de sushi</span></span>
+  </div>
+
+  <!-- Header -->
+  <header class="r-header" data-header>
+    <div class="r-wrap r-header__inner">
+      <a class="r-brand" href="#inicio" aria-label="Amida Sushi, inicio">
+        <img class="r-brand__logo" src="assets/img/logo-amida.webp" alt="Amida Sushi" width="560" height="514" />
+      </a>
+
+      <button class="r-toggle" data-menu-toggle aria-expanded="false" aria-controls="r-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="r-nav" id="r-nav" data-menu aria-label="Navegación principal">
+        <div class="r-nav__links">
+          <a href="#menu" data-nav-link>Menú</a>
+          <a href="#sushi-libre" data-nav-link>Sushi libre</a>
+          <a href="#experiencia" data-nav-link>Experiencia</a>
+          <a href="#locales" data-nav-link>Locales</a>
+          <a href="#nosotros" data-nav-link>Nosotros</a>
+        </div>
+        <a class="r-btn r-btn--primary" data-amida-wa="¡Hola! Quiero reservar una mesa en Amida Sushi.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+          Reservar mesa
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="r-hero" id="inicio">
+      <div class="r-hero__bg">
+        <img src="assets/img/amida/hero.webp" alt="Combinado de sushi de Amida Sushi sobre mesa oscura" width="1800" height="1200" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="r-hero__scrim" aria-hidden="true"></div>
+
+      <div class="r-wrap">
+        <div class="r-hero__inner reveal">
+          <span class="r-eyebrow">San Justo · Villa Luro</span>
+          <p class="r-hero__brand">Amida Sushi</p>
+          <h1>Una experiencia que se disfruta con todos los sentidos</h1>
+          <p class="r-hero__lead">Sushi y cocina japonesa elaborados al momento. Rolls, sashimi y platos calientes, con sushi libre tres noches por semana.</p>
+          <div class="r-actions">
+            <a class="r-btn r-btn--primary" data-amida-wa="¡Hola! Quiero reservar una mesa en Amida Sushi.">Reservar mesa</a>
+            <a class="r-btn r-btn--ghost" href="#menu">Explorar menú</a>
+          </div>
+          <div class="r-hero__meta">
+            <span><strong>4,4</strong> ★ en Google (899+)</span>
+            <span><span class="r-dot" aria-hidden="true"></span>Martes · Jueves · Domingos</span>
+            <span><span class="r-dot" aria-hidden="true"></span>Delivery a domicilio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilares -->
+    <section aria-label="Lo que nos distingue">
+      <div class="r-pillars">
+        <div class="r-pillar">
+          <span class="r-pillar__line" aria-hidden="true"></span>
+          <strong>Producto fresco</strong>
+          <span>Selección diaria de pescado y materia prima.</span>
+        </div>
+        <div class="r-pillar">
+          <span class="r-pillar__line" aria-hidden="true"></span>
+          <strong>Oficio</strong>
+          <span>Más de quince años preparando sushi en zona oeste.</span>
+        </div>
+        <div class="r-pillar">
+          <span class="r-pillar__line" aria-hidden="true"></span>
+          <strong>Dos locales</strong>
+          <span>San Justo y Villa Luro, con delivery propio.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sushi libre -->
+    <section class="r-section" id="sushi-libre">
+      <div class="r-wrap">
+        <div class="r-head r-head--center reveal">
+          <span class="r-eyebrow">Sushi libre</span>
+          <h2>Una secuencia completa, servida a la mesa</h2>
+          <p>No es un buffet: te llevamos las piezas a medida que las pedís. Disponible tres noches por semana.</p>
+        </div>
+
+        <div class="r-days reveal" style="justify-content: center; margin: 1.8rem 0 3rem">
+          <span class="r-day is-on">Martes</span>
+          <span class="r-day is-on">Jueves</span>
+          <span class="r-day is-on">Domingos</span>
+          <span class="r-day">Turnos de 1 h 30</span>
+        </div>
+
+        <div class="r-feature">
+          <div class="r-feature__media reveal">
+            <div class="r-frame r-frame--3x4">
+              <img src="assets/img/amida/nigiri-dramatico.webp" alt="Piezas de nigiri de salmón servidas sobre fondo oscuro" width="1100" height="1650" loading="lazy" decoding="async" />
+            </div>
+            <div class="r-seal">
+              <span>De trayectoria</span>
+              <strong>+15 años</strong>
+            </div>
+          </div>
+
+          <div class="reveal" data-delay="1">
+            <h3 class="r-kicker">Te guiamos en cada paso</h3>
+            <p>Armamos la secuencia según tus gustos y te acompañamos si es tu primera vez con el sushi. Empezás con las piezas más suaves y terminás con rolls calientes, platos de wok y postre.</p>
+
+            <div class="r-plan" style="margin-top: 1.6rem">
+              <span class="r-plan__badge">Mar · Jue · Dom</span>
+              <h3>Sushi libre</h3>
+              <p class="r-note">Secuencia completa de piezas, platos calientes y postre.</p>
+              <div class="r-plan__price"><strong>$34.900</strong><span>por persona</span></div>
+              <ul class="r-list">
+                <li>Rolls clásicos y especiales</li>
+                <li>Sashimi, nigiri y makis calientes</li>
+                <li>Wok o risotto a elección</li>
+                <li>Postre de rolls de helado y banana</li>
+              </ul>
+              <a class="r-btn r-btn--primary r-btn--block" data-amida-wa="¡Hola! Quiero reservar para el Sushi Libre en Amida Sushi.">Reservar mi lugar</a>
+              <p class="r-note" style="font-size: 0.78rem">Las bebidas no están incluidas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Menú -->
+    <section class="r-section" id="menu">
+      <div class="r-wrap">
+        <div class="r-head r-head--center reveal">
+          <span class="r-eyebrow">Menú</span>
+          <h2>Nuestra carta</h2>
+          <p>Rolls, sashimi, platos calientes y woks. Filtrá por categoría y consultá por WhatsApp.</p>
+        </div>
+
+        <div class="r-tabs reveal" role="group" aria-label="Categorías del menú">
+          <button class="is-active" data-filter="all" type="button" aria-pressed="true">Todos</button>
+          <button data-filter="entradas" type="button" aria-pressed="false">Entradas</button>
+          <button data-filter="rolls" type="button" aria-pressed="false">Rolls</button>
+          <button data-filter="sashimi" type="button" aria-pressed="false">Sashimi y Nigiri</button>
+          <button data-filter="calientes" type="button" aria-pressed="false">Calientes y Wok</button>
+        </div>
+
+        <div class="r-grid" id="productos">
+          <article class="r-card reveal" data-cat="entradas">
+            <div class="r-card__photo"><img src="assets/img/amida/rollitos.webp" alt="Rollitos de primavera crocantes de Amida Sushi" width="1100" height="1650" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Rollitos de primavera</h3>
+              <p>Crocantes y recién fritos, para arrancar la noche.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$10.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por los rollitos de primavera.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="entradas">
+            <div class="r-card__photo"><img src="assets/img/amida/tartar.webp" alt="Tartar de atún con aderezo de la casa" width="1100" height="1650" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Tartar de atún</h3>
+              <p>Atún fresco en cubos con aderezo de la casa.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$9.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el tartar.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="rolls">
+            <div class="r-card__photo"><img src="assets/img/amida/roll-nyc.webp" alt="Roll NYC de salmón, queso crema y palta" width="1100" height="1650" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Roll NYC</h3>
+              <p>Salmón, queso crema y palta. Uno de los más pedidos.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$16.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Roll NYC.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="rolls">
+            <div class="r-card__photo"><img src="assets/img/amida/roll-midori.webp" alt="Roll Midori de salmón ahumado" width="1100" height="1414" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Roll Midori</h3>
+              <p>Salmón ahumado, philadelphia y un toque de la casa.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$17.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Roll Midori.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="rolls">
+            <div class="r-card__photo"><img src="assets/img/amida/combinado-premium.webp" alt="Combinado premium de 24 piezas para compartir" width="1100" height="734" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Combinado Premium 24 piezas</h3>
+              <p>Selección de rolls y piezas de salmón para compartir.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$42.000</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Combinado Premium de 24 piezas.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="rolls">
+            <div class="r-card__photo"><img src="assets/img/amida/veggie.webp" alt="Rolls veggie con palta, batata y vegetales" width="1100" height="1650" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Opción Veggie</h3>
+              <p>Rolls con palta, batata y vegetales, sin pescado.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$13.000</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por la Opción Veggie.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="sashimi">
+            <div class="r-card__photo"><img src="assets/img/amida/sashimi.webp" alt="Sashimi de salmón cortado fresco" width="1100" height="1100" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Sashimi de salmón</h3>
+              <p>Cortes frescos de salmón, sin arroz.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$18.000</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Sashimi de salmón.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="sashimi">
+            <div class="r-card__photo"><img src="assets/img/amida/nigiri.webp" alt="Nigiri y makis de salmón y langostino" width="1100" height="1650" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Nigiri y makis</h3>
+              <p>Bocados de salmón, langostino y kanikama sobre arroz.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$13.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Nigiri y makis.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="calientes">
+            <div class="r-card__photo"><img src="assets/img/amida/hot-roll.webp" alt="Hot roll rebozado y crocante" width="1100" height="734" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Hot Roll</h3>
+              <p>Maki caliente, rebozado y crocante por fuera.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$14.900</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Hot Roll.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="calientes">
+            <div class="r-card__photo"><img src="assets/img/amida/ebi-furai.webp" alt="Ebi furai, langostinos rebozados" width="1100" height="1468" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Ebi Furai</h3>
+              <p>Langostinos rebozados y crocantes para empezar.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$13.000</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Ebi Furai.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="calientes">
+            <div class="r-card__photo"><img src="assets/img/amida/wok.webp" alt="Wok de frutos del mar con vegetales" width="1100" height="892" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Wok de frutos del mar</h3>
+              <p>Salteado de base a elección con vegetales y mariscos.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$19.500</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Wok de frutos del mar.">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="r-card reveal" data-cat="calientes">
+            <div class="r-card__photo"><img src="assets/img/amida/yakimeshi.webp" alt="Yakimeshi de salmón con huevo y verduras" width="1100" height="1540" loading="lazy" decoding="async" /></div>
+            <div class="r-card__body">
+              <h3>Yakimeshi de salmón</h3>
+              <p>Arroz salteado con salmón, huevo y verduras.</p>
+              <div class="r-card__foot">
+                <span class="r-price">$16.000</span>
+                <a class="r-btn r-btn--ghost r-btn--sm" data-amida-wa="¡Hola! Quiero consultar por el Yakimeshi de salmón.">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="r-note r-note--center reveal">Limonada de la casa, cervezas, vinos y postres de helado disponibles en el salón. Precios de referencia.</p>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Experiencia -->
+    <section class="r-section" id="experiencia">
+      <div class="r-wrap">
+        <div class="r-head reveal">
+          <span class="r-eyebrow">La experiencia</span>
+          <h2>Más que una carta</h2>
+        </div>
+
+        <div class="r-exp" style="margin-top: 3rem">
+          <div class="r-exp__row">
+            <div class="r-exp__media reveal">
+              <div class="r-frame r-frame--3x4">
+                <img src="assets/img/amida/interior.webp" alt="Interior cálido y de luz tenue del salón de Amida Sushi" width="1100" height="1466" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="r-exp__body reveal" data-delay="1">
+              <span class="r-exp__tag">El salón</span>
+              <h3>Un rincón cálido e íntimo</h3>
+              <p>Un salón chico, con luz tenue y pocas mesas. Esa escala es lo que nos permite atender cada mesa con calma, sin apurar el ritmo de la noche.</p>
+            </div>
+          </div>
+
+          <div class="r-exp__row r-exp__row--reverse">
+            <div class="r-exp__media reveal">
+              <div class="r-frame r-frame--4x3">
+                <img src="assets/img/amida/chef.webp" alt="Preparación de piezas de sushi en la cocina" width="1100" height="734" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="r-exp__body reveal" data-delay="1">
+              <span class="r-exp__tag">El oficio</span>
+              <h3>Hecho al momento</h3>
+              <p>El pescado se elige fresco, el arroz se trabaja y cada combinación se arma en el momento del pedido. Nada sale de una vitrina esperando.</p>
+            </div>
+          </div>
+
+          <div class="r-exp__row">
+            <div class="r-exp__media reveal">
+              <div class="r-frame r-frame--4x3">
+                <img src="assets/img/amida/plato-tabla.webp" alt="Tabla de sushi y té verde lista para compartir" width="1100" height="826" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="r-exp__body reveal" data-delay="1">
+              <span class="r-exp__tag">Para compartir</span>
+              <h3>Mesas y celebraciones</h3>
+              <p>Desde una cena para dos hasta barcos de sushi para grupos. Coordinamos la reserva según la cantidad de comensales y lo que quieras festejar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Locales -->
+    <section class="r-section" id="locales">
+      <div class="r-wrap">
+        <div class="r-head r-head--center reveal">
+          <span class="r-eyebrow">Locales y reservas</span>
+          <h2>Dos locales para pedir o comer</h2>
+          <p>Elegí el más cercano y hacé tu pedido o reserva por el WhatsApp de cada local.</p>
+        </div>
+
+        <div class="r-locales" style="margin-top: 3rem">
+          <div class="r-locale reveal">
+            <h3>San Justo</h3>
+            <div class="r-locale__meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Av. Pres. Dr. Arturo U. Illia 2290</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Todos los días, solo turno noche</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> 011 3290-2409</span>
+            </div>
+            <a class="r-btn r-btn--primary r-btn--block" data-wa-num="5491132902409" data-amida-wa="¡Hola! Quiero hacer una reserva en el local de San Justo.">Reservar en San Justo</a>
+          </div>
+
+          <div class="r-locale reveal" data-delay="1">
+            <h3>Villa Luro</h3>
+            <div class="r-locale__meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Av. Emilio Castro 5115</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Todos los días, solo turno noche</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> 011 4484-1937</span>
+            </div>
+            <a class="r-btn r-btn--ghost r-btn--block" data-wa-num="5491128331476" data-amida-wa="¡Hola! Quiero hacer una reserva en el local de Villa Luro.">Reservar en Villa Luro</a>
+          </div>
+        </div>
+
+        <div class="r-feature" style="margin-top: 3.5rem; align-items: start">
+          <div class="reveal">
+            <span class="r-eyebrow">Horarios</span>
+            <h3 class="r-kicker" style="margin-top: 0.8rem">Cuándo estamos abiertos</h3>
+            <div class="r-hours">
+              <div class="r-hours__row"><span>Lunes a jueves</span><span>18:00 – 23:30</span></div>
+              <div class="r-hours__row"><span>Viernes a domingo</span><span>18:00 – 00:00</span></div>
+            </div>
+            <p class="r-note" style="margin-top: 1rem">Solo turno noche. Reservá con anticipación: el salón es chico y se llena rápido.</p>
+          </div>
+
+          <div class="r-map reveal" data-delay="1">
+            <iframe title="Ubicación de Amida Sushi en San Justo" src="https://www.google.com/maps?q=Amida%20Sushi-Wok%2C%20Av.%20Illia%202290%2C%20San%20Justo&output=embed" width="100%" height="330" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Historia -->
+    <section class="r-section" id="nosotros">
+      <div class="r-wrap r-story">
+        <div class="reveal">
+          <span class="r-eyebrow">Nosotros</span>
+          <h2>Un rincón cálido en el corazón de San Justo</h2>
+          <p>Hace más de quince años hacemos sushi en Av. Illia 2290. Somos un salón chico e íntimo, con una fuente de agua, luz tenue y pocas mesas: esa es justamente la experiencia que buscamos cuidar.</p>
+          <p style="margin-top: 1rem">Elegimos el pescado fresco, trabajamos el arroz y preparamos cada combinación con la idea de que hasta quien «no come sushi» se lo lleve de recuerdo.</p>
+          <div class="r-quote-inline">Atención personalizada, materia prima fresca y una cocina que no se apura.</div>
+        </div>
+        <div class="r-gallery reveal" data-delay="1">
+          <div class="r-frame"><img src="assets/img/amida/plato-bandeja.webp" alt="Bandeja de rolls variados de Amida Sushi" width="1100" height="1466" loading="lazy" decoding="async" /></div>
+          <div class="r-frame"><img src="assets/img/amida/chef.webp" alt="Manos preparando piezas de sushi" width="1100" height="734" loading="lazy" decoding="async" /></div>
+          <div class="r-frame"><img src="assets/img/amida/interior.webp" alt="Detalle del salón con luz cálida" width="1100" height="1466" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Opiniones -->
+    <section class="r-section" id="comentarios">
+      <div class="r-wrap">
+        <div class="r-head reveal">
+          <span class="r-eyebrow">Opiniones</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p>Reseñas publicadas en Google por comensales de Amida Sushi.</p>
+        </div>
+
+        <div class="r-quotes" style="margin-top: 3rem">
+          <div class="r-quote reveal">
+            <div class="r-stars" role="img" aria-label="5 de 5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>«Un lugar pequeño, pero acogedor. La comida riquísima y buenos precios.»</blockquote>
+            <div class="r-quote__by"><span class="r-avatar" aria-hidden="true">V</span><div><strong>Veronica Malovrh</strong><span>Reseña de Google</span></div></div>
+          </div>
+
+          <div class="r-quote reveal" data-delay="1">
+            <div class="r-stars" role="img" aria-label="5 de 5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>«Pedí un combinado hot por take away. Me comuniqué por WhatsApp para aclarar que retiren el langostino porque soy alérgico y me avisaron que cambiaban el aceite para evitar la contaminación. Súper atentos y el combinado riquísimo.»</blockquote>
+            <div class="r-quote__by"><span class="r-avatar" aria-hidden="true">D</span><div><strong>Dario Nuñez</strong><span>Reseña de Google</span></div></div>
+          </div>
+
+          <div class="r-quote reveal" data-delay="2">
+            <div class="r-stars" role="img" aria-label="4 de 5 estrellas">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+            </div>
+            <blockquote>«Fuimos dos veces al sushi libre. La comida está muy rica y es una linda experiencia para compartir.»</blockquote>
+            <div class="r-quote__by"><span class="r-avatar" aria-hidden="true">J</span><div><strong>Juani Calabria</strong><span>Reseña de Google</span></div></div>
+          </div>
+        </div>
+
+        <div class="r-ratings reveal">
+          <span><strong>4,4 / 5</strong> en Google (899+ reseñas)</span>
+          <span><strong>4,6 / 5</strong> en Facebook</span>
+          <span>N.º 33 de 241 restaurantes en San Justo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section class="r-section r-section--tight" id="eventos">
+      <div class="r-wrap">
+        <div class="r-head reveal">
+          <span class="r-eyebrow">Eventos</span>
+          <h2>Llevá Amida a tu acontecimiento</h2>
+        </div>
+
+        <div class="r-events" style="margin-top: 2.6rem">
+          <div class="r-event reveal">
+            <h3>Barcos de sushi</h3>
+            <p>Presentaciones armadas para sorprender a tus invitados.</p>
+          </div>
+          <div class="r-event reveal" data-delay="1">
+            <h3>Mesas para grupos</h3>
+            <p>Coordinamos tu reserva según la cantidad de comensales.</p>
+          </div>
+          <div class="r-event reveal" data-delay="2">
+            <h3>Eventos de empresa</h3>
+            <p>Opciones de catering para oficinas y celebraciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="r-wrap"><hr class="r-divider" aria-hidden="true" /></div>
+
+    <!-- Instagram -->
+    <section class="r-section" id="instagram">
+      <div class="r-wrap">
+        <div class="r-ig-head reveal">
+          <div style="display: grid; gap: 0.7rem">
+            <span class="r-eyebrow">Instagram</span>
+            <h2>Seguinos en @amida_sushi</h2>
+            <p>Más de 30 mil seguidores, promos, novedades y el día a día del local.</p>
+          </div>
+          <a class="r-btn r-btn--ghost" href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            Ver Instagram
+          </a>
+        </div>
+
+        <div class="r-feed reveal">
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Publicación de Instagram sobre el sushi libre">
+            <img src="assets/img/amida/ig-1.jpg" alt="Publicación de Instagram de Amida Sushi sobre el sushi libre" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="r-feed__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Plato de sushi de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-2.jpg" alt="Plato de sushi de Amida Sushi" width="478" height="640" loading="lazy" decoding="async" />
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Sushi de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-3.jpg" alt="Sushi de Amida Sushi" width="480" height="640" loading="lazy" decoding="async" />
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Plato de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-4.jpg" alt="Plato de Amida Sushi" width="511" height="640" loading="lazy" decoding="async" />
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Video de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-5.jpg" alt="Video de Amida Sushi" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="r-feed__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Video de sushi de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-6.jpg" alt="Video de sushi de Amida Sushi" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="r-feed__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Video de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-7.jpg" alt="Video de Amida Sushi" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="r-feed__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer" aria-label="Video de Amida Sushi en Instagram">
+            <img src="assets/img/amida/ig-8.jpg" alt="Video de Amida Sushi" width="360" height="640" loading="lazy" decoding="async" />
+            <span class="r-feed__play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA plantilla -->
+    <section class="r-section r-section--tight">
+      <div class="r-wrap">
+        <div class="r-cta reveal">
+          <span class="r-eyebrow r-eyebrow--solo r-eyebrow--wine">Plantilla disponible</span>
+          <h2>¿Querés una página así para tu restaurante?</h2>
+          <p>Cargo tu menú con fotos y precios, tus promos, los horarios y la ubicación. Tus clientes te reservan y te piden por WhatsApp.</p>
+          <div class="r-actions">
+            <a class="r-btn r-btn--primary" data-config-href="whatsapp" data-wa="¡Hola! Quiero una página como la demo de Restaurante para mi negocio.">Quiero esta plantilla</a>
+            <a class="r-btn r-btn--ghost" href="../../index.html">Ver otras plantillas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="r-footer">
+    <div class="r-wrap">
+      <div class="r-footer__grid">
+        <div class="r-footer__brand">
+          <a class="r-brand" href="#inicio" aria-label="Amida Sushi, inicio">
+            <img class="r-brand__logo" src="assets/img/logo-amida.webp" alt="" width="560" height="514" />
+          </a>
+          <p>Sushi y cocina japonesa en San Justo y Villa Luro. Sushi libre martes, jueves y domingos, delivery y reservas por WhatsApp.</p>
+        </div>
+        <nav class="r-footer__links" aria-label="Enlaces del pie">
+          <a href="#menu">Menú</a>
+          <a href="#sushi-libre">Sushi libre</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#locales">Locales</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#comentarios">Opiniones</a>
+          <a href="https://www.instagram.com/amida_sushi" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="../../index.html">Catálogo de plantillas</a>
+        </nav>
+      </div>
+      <div class="r-footer__bottom">
+        <span>© <span data-year>2026</span> Amida Sushi — San Justo · Villa Luro.</span>
+        <span>Sitio demo hecho por <a href="../../index.html">Denegri Web</a> · <a data-config-href="whatsapp" data-wa="¡Hola! Vi la demo de Restaurante (Amida Sushi).">Escribime</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="r-wa" data-amida-wa="¡Hola! Quiero hacer un pedido en Amida Sushi." aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.7-1.2-4.5-4-4.6-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.1 0 .4-.1.6.4l.7 1.7c.1.1.1.3 0 .5l-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.4.1.6-.1l.8-.9c.2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* Filtro por categorías del menú */
+    (function () {
+      var tabs = document.querySelectorAll(".r-tabs button");
+      var cards = document.querySelectorAll("#productos [data-cat]");
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var cat = tab.getAttribute("data-filter");
+          tabs.forEach(function (t) {
+            t.classList.remove("is-active");
+            t.setAttribute("aria-pressed", "false");
+          });
+          tab.classList.add("is-active");
+          tab.setAttribute("aria-pressed", "true");
+          cards.forEach(function (card) {
+            var mostrar = cat === "all" || card.getAttribute("data-cat") === cat;
+            card.style.display = mostrar ? "" : "none";
+          });
+        });
+      });
+    })();
+
+    /* Enlaces de WhatsApp propios del local (no los del catálogo).
+       data-wa-num permite usar el número de cada local; por defecto, San Justo. */
+    (function () {
+      var porDefecto = "5491132902409"; // WhatsApp San Justo
+      document.querySelectorAll("[data-amida-wa]").forEach(function (a) {
+        var num = a.getAttribute("data-wa-num") || porDefecto;
+        var msg = a.getAttribute("data-amida-wa");
+        a.setAttribute("href", "https://wa.me/" + num + (msg ? "?text=" + encodeURIComponent(msg) : ""));
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "noopener noreferrer");
+      });
+    })();
+  </script>
+</body>
+</html>

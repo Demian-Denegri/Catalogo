@@ -53,6 +53,21 @@
 [data-accent="tienda"]     { --accent: #10b981; --accent-rgb: 16, 185, 129; --accent-2: #22d3ee; --accent-2-rgb: 34, 211, 238; }
 [data-accent="servicios"]  { --accent: #3b82f6; --accent-rgb: 59, 130, 246; --accent-2: #22d3ee; --accent-2-rgb: 34, 211, 238; }
 [data-accent="eventos"]    { --accent: #f0b429; --accent-rgb: 240, 180, 41; --accent-2: #ec4899; --accent-2-rgb: 236, 72, 153; }
+/* Restaurante — estética tomada del Instagram de Amida: negro puro, tipografía
+   blanca en mayúsculas y acento rojo→ámbar. */
+[data-accent="restaurante"] {
+  --accent: #ff2d3f;
+  --accent-rgb: 255, 45, 63;
+  --accent-2: #ff9d2e;
+  --accent-2-rgb: 255, 157, 46;
+
+  --bg: #070707;
+  --bg-soft: #0c0c0c;
+  --surface: #111111;
+  --surface-2: #171717;
+  --border: rgba(255, 255, 255, 0.11);
+  --border-strong: rgba(255, 255, 255, 0.24);
+}
 
 /* ------------------------------------------------------------- reset ----- */
 *,

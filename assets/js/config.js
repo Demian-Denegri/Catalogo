@@ -3,7 +3,7 @@
    ----------------------------------------------------------------------------
    Todo lo que ves con [CORCHETES] o "XXXX" en la página se completa desde acá.
    Cambiá los valores de la derecha y se actualizan en TODAS las páginas
-   (el catálogo y las 5 demos) automáticamente.
+   (el catálogo y las 6 demos) automáticamente.
 
    Reglas rápidas:
    • No borres las comillas.
