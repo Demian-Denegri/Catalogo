@@ -29,8 +29,8 @@ window.CATALOGO_CONFIG = {
 
   /* ---------- PRECIOS (pago único + abono mensual) ------------------------ */
   precios: {
-    desarrollo: "$XX.XXX", // precio de desarrollo, pago único
-    mantenimiento: "$X.XXX", // abono por mantenimiento
+    desarrollo: "$100.000", // precio de desarrollo, pago único
+    mantenimiento: "$35.000", // abono por mantenimiento
     mantenimientoPeriodo: "por mes",
   },
 
