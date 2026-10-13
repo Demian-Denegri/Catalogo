@@ -225,7 +225,7 @@ p { color: var(--color-text-secondary); }
 }
 
 .r-brand { display: inline-flex; align-items: center; }
-.r-brand__logo { width: auto; height: 52px; }
+.r-brand__logo { width: auto; height: 52px; filter: brightness(0) invert(1); }
 @media (max-width: 640px) { .r-brand__logo { height: 44px; } }
 
 .r-nav { display: flex; align-items: center; gap: 1.9rem; }
@@ -452,6 +452,7 @@ p { color: var(--color-text-secondary); }
   border-top: 1px solid var(--color-border-soft);
 }
 .r-price { font-family: var(--font-heading); font-weight: 600; font-size: 1rem; color: var(--color-text); }
+.r-card__foot .r-btn { width: 100%; }
 
 /* --------------------------------------------------------------- locales -- */
 .r-locales { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; }
@@ -481,7 +482,9 @@ p { color: var(--color-text-secondary); }
 .r-hours__row span:last-child { font-family: var(--font-heading); font-weight: 600; }
 
 .r-map { border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; }
-.r-map iframe { display: block; border: 0; width: 100%; filter: grayscale(0.35) contrast(1.05); }
+/* Modo oscuro del mapa sin API key: filtro de inversión (estándar).
+   El embed `output=embed` de Google no soporta theme=dark nativo. */
+.r-map iframe { display: block; border: 0; width: 100%; filter: invert(0.9) hue-rotate(180deg) saturate(0.65) contrast(0.95); }
 
 /* ------------------------------------------------------------- experien. -- */
 .r-exp { display: grid; gap: clamp(2.4rem, 5vw, 4rem); }
